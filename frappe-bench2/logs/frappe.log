@@ -1,0 +1,9 @@
+2024-12-12 15:42:49,886 ERROR frappe New Exception collected with id: 2024-12-12 15:42:49.826207-127.0.0.1-38e
+Site: erp1.com
+Form Dict: {'doctype': 'Driver', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2024-12-12 15:43:29,190 ERROR frappe New Exception collected with id: 2024-12-12 15:43:29.137676-127.0.0.1-5d3
+Site: erp1.com
+Form Dict: {'doctype': 'Driver', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2024-12-12 15:43:38,978 ERROR frappe New Exception collected with id: 2024-12-12 15:43:38.928599-127.0.0.1-eeb
+Site: erp1.com
+Form Dict: {'doctype': 'Driver', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}

@@ -1,0 +1,36 @@
+2024-12-12 15:18:04,324 DEBUG cd /home/harshitsrivastava/frappe-bench2 && /usr/bin/virtualenv --quiet env -p python3
+2024-12-12 15:18:04,513 DEBUG cd /home/harshitsrivastava/frappe-bench2 && /home/harshitsrivastava/frappe-bench2/env/bin/python -m pip install --quiet --upgrade pip
+2024-12-12 15:18:06,794 LOG Getting frappe
+2024-12-12 15:18:06,795 DEBUG cd frappe-bench2/apps && git clone https://github.com/frappe/frappe.git --branch version-13 --depth 1 --origin upstream
+2024-12-12 15:18:09,646 LOG Installing frappe
+2024-12-12 15:18:09,646 DEBUG cd /home/harshitsrivastava/frappe-bench2 && /home/harshitsrivastava/frappe-bench2/env/bin/python -m pip install --quiet --upgrade -e /home/harshitsrivastava/frappe-bench2/apps/frappe 
+2024-12-12 15:18:26,765 DEBUG cd /home/harshitsrivastava/frappe-bench2/apps/frappe && yarn install
+2024-12-12 15:19:42,772 DEBUG cd frappe-bench2 && bench build
+2024-12-12 15:19:42,875 INFO /usr/local/bin/bench build
+2024-12-12 15:20:09,100 LOG setting up backups
+2024-12-12 15:20:09,103 LOG backups were set up
+2024-12-12 15:20:09,103 INFO Bench frappe-bench2 initialized
+2024-12-12 15:21:51,668 INFO /usr/local/bin/bench start
+2024-12-12 15:21:51,978 INFO /usr/local/bin/bench worker --queue short
+2024-12-12 15:21:51,981 INFO /usr/local/bin/bench schedule
+2024-12-12 15:21:51,989 INFO /usr/local/bin/bench serve --port 8002
+2024-12-12 15:21:51,990 INFO /usr/local/bin/bench worker --queue long
+2024-12-12 15:21:52,028 INFO /usr/local/bin/bench watch
+2024-12-12 15:21:52,035 INFO /usr/local/bin/bench worker --queue default
+2024-12-12 15:22:15,651 INFO /usr/local/bin/bench new-site erp1.com
+2024-12-12 15:23:05,635 INFO /usr/local/bin/bench get-app erpnext --branch version-13
+2024-12-12 15:23:06,205 LOG Getting erpnext
+2024-12-12 15:23:06,205 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-13 --depth 1 --origin upstream
+2024-12-12 15:23:10,579 LOG Installing erpnext
+2024-12-12 15:23:10,580 DEBUG cd /home/harshitsrivastava/frappe-bench2 && /home/harshitsrivastava/frappe-bench2/env/bin/python -m pip install --quiet --upgrade -e /home/harshitsrivastava/frappe-bench2/apps/erpnext 
+2024-12-12 15:23:21,233 DEBUG cd /home/harshitsrivastava/frappe-bench2/apps/erpnext && yarn install
+2024-12-12 15:23:21,582 DEBUG bench build --app erpnext
+2024-12-12 15:23:21,680 INFO /usr/local/bin/bench build --app erpnext
+2024-12-12 15:23:44,818 INFO /usr/local/bin/bench --site erp1.com install-app erpnext
+2024-12-12 15:24:58,121 INFO /usr/local/bin/bench start
+2024-12-12 15:24:58,440 INFO /usr/local/bin/bench serve --port 8002
+2024-12-12 15:24:58,441 INFO /usr/local/bin/bench watch
+2024-12-12 15:24:58,441 INFO /usr/local/bin/bench worker --queue default
+2024-12-12 15:24:58,469 INFO /usr/local/bin/bench worker --queue short
+2024-12-12 15:24:58,492 INFO /usr/local/bin/bench worker --queue long
+2024-12-12 15:24:58,494 INFO /usr/local/bin/bench schedule

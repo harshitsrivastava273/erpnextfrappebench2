@@ -1,0 +1,156 @@
+/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/build.py:7: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.spawn import find_executable
+/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/build.py:7: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.spawn import find_executable
+/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/build.py:7: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.spawn import find_executable
+Exception in thread Thread-1:
+Traceback (most recent call last):
+Exception in thread   File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+        self.run()self.run()
+
+  File "/home/harshitsrivastava/frappe-bench2/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+  File "/home/harshitsrivastava/frappe-bench2/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/harshitsrivastava/frappe-bench2/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/harshitsrivastava/frappe-bench2/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/harshitsrivastava/frappe-bench2/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/harshitsrivastava/frappe-bench2/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/harshitsrivastava/frappe-bench2/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/harshitsrivastava/frappe-bench2/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/harshitsrivastava/frappe-bench2/env/lib/python3.10/site-packages/redis/connection.py", line 321, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/harshitsrivastava/frappe-bench2/env/lib/python3.10/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/harshitsrivastava/frappe-bench2/env/lib/python3.10/site-packages/redis/connection.py", line 230, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/harshitsrivastava/frappe-bench2/env/lib/python3.10/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/home/harshitsrivastava/frappe-bench2/env/lib/python3.10/site-packages/redis/connection.py", line 201, in _read_from_socket
+    self._read_from_socket(timeout=timeout,
+  File "/home/harshitsrivastava/frappe-bench2/env/lib/python3.10/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/build.py:7: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.spawn import find_executable
+/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/build.py:7: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.spawn import find_executable
+/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/build.py:7: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.spawn import find_executable
+2024-12-12 15:31:02,149 Traceback (most recent call last):
+  File "/home/harshitsrivastava/frappe-bench2/env/lib/python3.10/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/harshitsrivastava/frappe-bench2/env/lib/python3.10/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/harshitsrivastava/frappe-bench2/env/lib/python3.10/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/utils/background_jobs.py", line 147, in execute_job
+    retval = method(**kwargs)
+  File "/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/core/doctype/user/user.py", line 1124, in create_contact
+    contact.insert(
+  File "/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/model/document.py", line 257, in insert
+    self._validate_links()
+  File "/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/model/document.py", line 910, in _validate_links
+    frappe.throw(_("Could not find {0}").format(msg), frappe.LinkValidationError)
+  File "/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/__init__.py", line 505, in throw
+    msgprint(
+  File "/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/__init__.py", line 480, in msgprint
+    _raise_exception()
+  File "/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/__init__.py", line 435, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.LinkValidationError: Could not find User Id: harshitsrivastava273@gmail.com
+
+2024-12-12 15:31:02,610 Traceback (most recent call last):
+  File "/home/harshitsrivastava/frappe-bench2/env/lib/python3.10/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/harshitsrivastava/frappe-bench2/env/lib/python3.10/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/harshitsrivastava/frappe-bench2/env/lib/python3.10/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/utils/background_jobs.py", line 147, in execute_job
+    retval = method(**kwargs)
+  File "/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/core/doctype/user/user.py", line 1124, in create_contact
+    contact.insert(
+  File "/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/model/document.py", line 257, in insert
+    self._validate_links()
+  File "/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/model/document.py", line 910, in _validate_links
+    frappe.throw(_("Could not find {0}").format(msg), frappe.LinkValidationError)
+  File "/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/__init__.py", line 505, in throw
+    msgprint(
+  File "/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/__init__.py", line 480, in msgprint
+    _raise_exception()
+  File "/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/__init__.py", line 435, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.LinkValidationError: Could not find User Id: harshitsrivastava273@gmail.com
+
+/home/harshitsrivastava/frappe-bench2/env/lib/python3.10/site-packages/botocore/httpsession.py:18: DeprecationWarning: 'urllib3.contrib.pyopenssl' module is deprecated and will be removed in a future release of urllib3 2.x. Read more in this issue: https://github.com/urllib3/urllib3/issues/2680
+  from urllib3.contrib.pyopenssl import orig_util_SSLContext as SSLContext
+/home/harshitsrivastava/frappe-bench2/env/lib/python3.10/site-packages/botocore/httpsession.py:18: DeprecationWarning: 'urllib3.contrib.pyopenssl' module is deprecated and will be removed in a future release of urllib3 2.x. Read more in this issue: https://github.com/urllib3/urllib3/issues/2680
+  from urllib3.contrib.pyopenssl import orig_util_SSLContext as SSLContext
+/home/harshitsrivastava/frappe-bench2/env/lib/python3.10/site-packages/botocore/httpsession.py:18: DeprecationWarning: 'urllib3.contrib.pyopenssl' module is deprecated and will be removed in a future release of urllib3 2.x. Read more in this issue: https://github.com/urllib3/urllib3/issues/2680
+  from urllib3.contrib.pyopenssl import orig_util_SSLContext as SSLContext
+WARNING	Property: Unknown Property name. [11:3: overflow-wrap]
+WARNING	Property: Unknown Property name. [11:3: overflow-wrap]
+2024-12-12 16:16:11,355 Traceback (most recent call last):
+  File "/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/email/receive.py", line 171, in get_messages
+  File "/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/email/receive.py", line 230, in get_new_mails
+  File "/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/email/receive.py", line 251, in check_imap_uidvalidity
+  File "/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/database/database.py", line 807, in set_value
+  File "/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/utils/data.py", line 281, in now
+  File "/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/utils/data.py", line 228, in now_datetime
+  File "/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/utils/data.py", line 269, in convert_utc_to_user_timezone
+  File "/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/utils/data.py", line 253, in convert_utc_to_timezone
+ModuleNotFoundError: No module named 'pytz'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/utils/background_jobs.py", line 147, in execute_job
+  File "/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 996, in pull_from_email_account
+  File "/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 360, in receive
+  File "/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/email/receive.py", line 205, in get_messages
+  File "/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/email/receive.py", line 351, in has_login_limit_exceeded
+AttributeError: 'ModuleNotFoundError' object has no attribute 'message'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/modules/utils.py", line 243, in load_doctype_module
+  File "/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/__init__.py", line 1206, in get_module
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'frappe.core.doctype.error_log'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/harshitsrivastava/frappe-bench2/env/lib/python3.10/site-packages/rq/worker.py", line 1013, in perform_job
+  File "/home/harshitsrivastava/frappe-bench2/env/lib/python3.10/site-packages/rq/job.py", line 709, in perform
+  File "/home/harshitsrivastava/frappe-bench2/env/lib/python3.10/site-packages/rq/job.py", line 732, in _execute
+  File "/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/utils/background_jobs.py", line 171, in execute_job
+  File "/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/__init__.py", line 2069, in log_error
+  File "/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/__init__.py", line 1080, in get_doc
+  File "/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/model/document.py", line 77, in get_doc
+  File "/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/model/base_document.py", line 78, in get_controller
+  File "/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/model/base_document.py", line 64, in _get_controller
+  File "/home/harshitsrivastava/frappe-bench2/apps/frappe/frappe/modules/utils.py", line 245, in load_doctype_module
+ImportError: Module import failed for Error Log (frappe.core.doctype.error_log.error_log Error: No module named 'frappe.core.doctype.error_log')
+
